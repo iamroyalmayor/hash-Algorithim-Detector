@@ -1,5 +1,19 @@
 import hashlib
 import os
+import update_checker
+
+
+# Check for updates
+repo_owner = 'iamroyalmayor'  # Your GitHub username or organization name
+repo_name = 'hash-Algorithim-Detector'  # Your repository name
+current_version = '1.0'  # Your current version number
+
+update_message = update_checker.check_for_update(repo_owner, repo_name, current_version)
+print(update_message)
+
+# Your main code logic starts here
+# Add the rest of your code below...
+
 
 def detect_hash_algorithm(hash_value):
     hash_length = len(hash_value)
