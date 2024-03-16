@@ -2,7 +2,7 @@ import requests
 
 def check_for_update(repo_owner, repo_name, current_version):
     # GitHub API endpoint to get the latest release version
-    api_url = f'https://api.github.com/repos/{iamroyalmayor}/{hash-Algorithim-Detector}/releases/latest'
+    api_url = f'https://api.github.com/repos/iamroyalmayor/hash-Algorithim-Detector/releases/latest'
     
     try:
         response = requests.get(api_url)
